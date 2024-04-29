@@ -1,1 +1,15 @@
 import pandas as pd
+
+url = '
+df = pd.read_csv(url)
+df
+
+df.info()
+
+df = df.drop (columns = ['Product Name','Product Category'])
+
+df ['Product Price'] = df ['Product Price'].apply(lambda x: df['Product Price].unique().tolist().index(x))
+df ['Quantity'] = df ['Quantity'].apply(lambda x: df['Quantity'].unique().tolist().index(x))
+
+df.info()
+
