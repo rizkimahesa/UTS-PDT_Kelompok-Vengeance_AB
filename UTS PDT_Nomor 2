@@ -1,1 +1,14 @@
+url = 'https://raw.githubusercontent.com/rizkimahesa/UTS-PDT_Kelompok-Vengeance_AB/main/Data%20Kursi%20kereta.csv'
+df = pd.read_csv(url)
+df
 
+kursi_tersedia = df[df['Keterangan'] == 'Tersedia']['No Bangku Kreta'].tolist()
+kursi_habis = df[df['Keterangan'] == 'Habis']['No Bangku Kreta'].tolist()
+
+jumlah_habis= df['Keterangan'].value_counts()['Habis']
+jumlah_tersedia= df['Keterangan'].value_counts()['Tersedia']
+
+print("Kursi yang masih tersedia:", kursi_tersedia)
+print("Jumlah kursi yang masih tersedia:", jumlah_tersedia)
+print("kursi yang habis:",kursi_habis)
+print("Jumlah kursi yang habis:",jumlah_habis)
