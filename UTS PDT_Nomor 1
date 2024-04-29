@@ -1,6 +1,6 @@
 import pandas as pd
 
-url = '
+url = 'https://raw.githubusercontent.com/rizkimahesa/UTS-PDT_Kelompok-Vengeance_AB/main/indian_store.csv'
 df = pd.read_csv(url)
 df
 
