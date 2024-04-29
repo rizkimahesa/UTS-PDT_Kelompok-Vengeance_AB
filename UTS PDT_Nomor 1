@@ -13,3 +13,26 @@ df ['Quantity'] = df ['Quantity'].apply(lambda x: df['Quantity'].unique().tolist
 
 df.info()
 
+median = df['Product Price'].median()
+median_price = df['Product Price (INR)'].median()
+median_quantity = df['Quantity'].median()
+print("Median", median)
+print("Median", median_price)
+print("Median", median_quantity)
+
+
+mean = df['Product Price'].mean()
+mean_price = df['Product Price (INR)'].mean()
+mean_quantity = df['Quantity'].mean()
+print("mean", mean)
+print("mean price", mean_price)
+print("mean quantity", mean_quantity)
+
+total_count = len(df)
+print("Total data:", total_count)
+
+
+
+
+
+
